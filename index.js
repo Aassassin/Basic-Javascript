@@ -26,8 +26,12 @@
 // let y=19;
 // let find =name +y;ß
 // console.log(find);
-const name="rahul";
-const lname="giri";
-console.log("my name is : " +name+ " " +lname+".");
-const mygreeting=(`my name is  ${name} ${lname}`);
-console.log(`Hello Everyone :${mygreeting}`)
+// const name="rahul";
+// const lname="giri";
+// console.log("my name is : " +name+ " " +lname+".");
+// const mygreeting=(`my name is  ${name} ${lname}`);
+// console.log(`Hello Everyone :${mygreeting}`)
+let name="Rahul";
+console.log(name);
+console.log(typeof name);
+console.log(typeof Number(name));
