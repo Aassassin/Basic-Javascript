@@ -34,49 +34,54 @@
 // let name="Rahul";
 // console.log(name);
 // console.log(typeof name);
-// console.log(typeof Number(name));
+// // console.log(typeof Number(name));
 
 
 
 
-//type conversion and strings methods
+// //type conversion and strings methods
 
-// let number =678;
-// console.log(number);
-// console.log(typeof String(number));
-// console.log(typeof number.toString());
+// // let number =678;
+// // console.log(number);
+// // console.log(typeof String(number));
+// // console.log(typeof number.toString());
 
 
-//strings Methods
-let str="HEllo, world!";
-let y="How are You?";
-let z= "  How is Your Life";
+// //strings Methods
+// let str="HEllo, world!";
+// let y="How are You?";
+// let z= "  How is Your Life";
 
-//charAt
-console.log(str.charAt(0));
-//length
-console.log(str.length);
-//concat
-console.log(str.concat("whats up"));
-//replace
-console.log(str.replace("HEllo","HI"));
-console.log(str.replace("world","Earth"));
-//indexof
-console.log(str.indexOf("o"));
-//lastIndexOf
-console.log(str.lastIndexOf("l"));
-console.log(str.lastIndexOf("o"));
-//includes
-console.log(str.includes("HEllo"));
-console.log(str.includes("hello"));
-//split
-console.log(str.split(","));
-//toLowerCase()/ to UpperCase
-console.log(str.toLowerCase());
-console.log(str.toUpperCase());
-console.log(y.toUpperCase());
-//trim
-console.log(z.trim());
-//slice
-console.log(str.slice(0,4));
-console.log(str.slice(1,2));
+// //charAt
+// console.log(str.charAt(0));
+// //length
+// console.log(str.length);
+// //concat
+// console.log(str.concat("whats up"));
+// //replace
+// console.log(str.replace("HEllo","HI"));
+// console.log(str.replace("world","Earth"));
+// //indexof
+// console.log(str.indexOf("o"));
+// //lastIndexOf
+// console.log(str.lastIndexOf("l"));
+// console.log(str.lastIndexOf("o"));
+// //includes
+// console.log(str.includes("HEllo"));
+// console.log(str.includes("hello"));
+// //split
+// console.log(str.split(","));
+// //toLowerCase()/ to UpperCase
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
+// console.log(y.toUpperCase());
+// //trim
+// console.log(z.trim());
+// //slice
+// console.log(str.slice(0,4));
+//console.log(str.slice(1,2));
+// const heading=document.getElementById("myclass");
+// console.log(heading);
+// heading.innerText="welcome to the club";
+heading.style.background="red";
+heading.style.color="white";
