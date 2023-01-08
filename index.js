@@ -80,8 +80,8 @@
 // //slice
 // console.log(str.slice(0,4));
 //console.log(str.slice(1,2));
-// const heading=document.getElementById("myclass");
+ const heading=document.getElementById("myclass");
 // console.log(heading);
-// heading.innerText="welcome to the club";
-heading.style.background="red";
-heading.style.color="white";
+ heading.innerText="welcome to the club";
+ heading.style.background = "red";
+  heading.style.color="white";
