@@ -80,8 +80,143 @@
 // //slice
 // console.log(str.slice(0,4));
 //console.log(str.slice(1,2));
- const heading=document.getElementById("myclass");
-// console.log(heading);
- heading.innerText="welcome to the club";
- heading.style.background = "red";
-  heading.style.color="white";
+//  const heading=document.getElementById("myclass");
+// // console.log(heading);
+//  heading.innerText="welcome to the club";
+//  heading.style.background = "red";
+//   heading.style.color="white";
+
+
+
+//conditions(if else)
+// let email ='raahulgiri815@outlook.com';
+// let password ="11111";
+// if(email ==="raahulgiri815@outlook.co" && password==="11111"){
+// console.log("login successful")
+// }else{
+//     console.log('Invalid credentials');
+// }
+
+
+//student grade
+
+// let grade="A";
+// //let grade="B";
+// if(grade ==="B"){
+//     console.log("Very good marks!")
+// }else if(grade==="C"){
+//     console.log("good marks")
+// }else if(grade==="D"){
+//     console.log("needs to improve")
+// }else if(grade=="A"){
+//     console.log("excellent marks")
+// }
+// else{
+//     console.log("Invalid marks")
+// };
+
+//x=10
+
+// let x=15;
+// if(x>15){
+//     console.log("X is greater than 15")
+// }else if(x>5){
+//     console.log("x is greater than 5 but not greater than 15")
+// }else{
+//     console.log("X is not greater than 15")
+// }
+
+
+//Weather
+
+// let weather ="winter";
+// if(weather==="sunny"){
+//     console.log("It is very hot")
+// }else if(weather==="rainy"){
+//     console.log("It is raining")
+// }else if(weather==="winter"){
+//     console.log("It is very cold")
+// }else if(weather==="autumn"){
+//     console.log("It is a beautiful day")
+// }else{
+//     console.log("Invalid weather datail")
+// }
+
+
+//switch case
+// let day="sunday"
+// switch (day) {
+//     case  "monday":
+//         console.log("today is monday")
+//         break;
+// }
+// switch (day) {
+//     case "tuesday":
+//         console.log("today is tuesday")
+//         break;
+// }
+// switch (day) {
+//     case "wednesday":
+//         console.log('today is wednesday')
+//         break;
+// }
+//   switch (day) {
+//     case "sunday":
+//         console.log("today is sunday")
+//         break;
+  
+//     default:
+//     console.log("invalid day")
+//         break;
+//   }
+
+// let grade="C";
+// switch(grade){
+//     case "A" :
+//     console.log("excellent marks")
+//     break;
+// 
+// 
+// case "B":
+//     console.log("very good marks")
+//     break;
+// 
+//    
+//     case "C":
+//         console.log("average marks!")
+//         break;
+//    
+//     case "D":
+//         console.log("Need to improve");
+//         break;
+//    }
+   
+let month="january"
+switch(month){
+    case "january":
+        case "february":
+            case "march":
+                console.log("The month is Q1")
+                break;
+                case "may":
+                    case "june":
+                        case "july":
+                            console.log("The month is Q2");
+                            break;
+                            case "august":
+                                case "september":
+                                    case "october":
+                                        console.log("The month is Q3");
+                                        break;
+                                        case "November":
+                                            case "december":
+                                                console.log("The month is Q4");
+                                                break;
+                                                default:
+                                                    console.log("Invalid month");
+                                                    break;
+
+
+}
+   
+   
