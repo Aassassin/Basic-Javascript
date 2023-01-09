@@ -149,18 +149,15 @@
 //     case  "monday":
 //         console.log("today is monday")
 //         break;
-// }
-// switch (day) {
+
 //     case "tuesday":
 //         console.log("today is tuesday")
 //         break;
-// }
-// switch (day) {
+// 
 //     case "wednesday":
 //         console.log('today is wednesday')
 //         break;
-// }
-//   switch (day) {
+// 
 //     case "sunday":
 //         console.log("today is sunday")
 //         break;
@@ -191,32 +188,125 @@
 //         break;
 //    }
    
-let month="january"
-switch(month){
-    case "january":
-        case "february":
-            case "march":
-                console.log("The month is Q1")
-                break;
-                case "may":
-                    case "june":
-                        case "july":
-                            console.log("The month is Q2");
-                            break;
-                            case "august":
-                                case "september":
-                                    case "october":
-                                        console.log("The month is Q3");
-                                        break;
-                                        case "November":
-                                            case "december":
-                                                console.log("The month is Q4");
-                                                break;
-                                                default:
-                                                    console.log("Invalid month");
-                                                    break;
+// let month="january"
+// switch(month){
+//     case "january":
+//         case "february":
+//             case "march":
+//                 console.log("The month is Q1")
+//                 break;
+//                 case "may":
+//                     case "june":
+//                         case "july":
+//                             console.log("The month is Q2");
+//                             break;
+//                             case "august":
+//                                 case "september":
+//                                     case "october":
+//                                         console.log("The month is Q3");
+//                                         break;
+//                                         case "November":
+//                                             case "december":
+//                                                 console.log("The month is Q4");
+//                                                 break;
+//                                                 default:
+//                                                     console.log("Invalid month");
+//                                                     break;
 
 
-}
+// }
    
    
+// //loop
+// for(i=0;i<10;i++){
+//     //document.write(i);
+//     console.log(i)
+// }
+
+//do while
+
+// let i=1;
+// while(i<=4){
+//     console.log("Hello");
+//     i++;
+// }
+
+// const myarray=[1,2,3,4,42,4,2];
+// console.log(myarray.length);
+// console.log(myarray[4]);
+// console.log(myarray.sort())
+// console.log(myarray.push(11))
+
+//while
+// let x=0;
+// while(x<5){
+//     console.log(x);
+//     x++;
+// }
+
+
+// let i=0;
+// do{
+//     console.log("hello world");}
+//     while (i<5);
+
+
+
+    // const newarr = ["shyam","geeta" , "sita"];
+    // console.log(newarr);
+    // const newadd =newarr.push("Iron man");
+    // console.log(newadd);
+
+
+//unshift method
+
+// const newarr =["chadwick","spider","captain"];
+// console.log(newarr.unshift("Iron man"));
+// console.log(newarr)
+
+//pop method
+// const newarr =[3,4,5,6,7];
+// console.log(newarr);
+// const newdata =newarr.pop();
+// console.log(newdata);
+// const newarr =[1,2,3,4,5];
+// console.log(newarr);
+// const newdata =newarr.shift();
+// console.log(newdata);
+// console.log(newarr);
+
+
+//concat method
+// let array1 =[1,2,4,5,647];
+// let array2 =["captain","Iron","super"];
+// let concat =array1.concat(array2);
+// console.log(concat);
+
+//filter method
+
+// let num=[12,3,5,6,56,7,8,77,79];
+// console.log(num);
+// const filter= num.filter((n) => n>5);
+// console.log(filter);
+// console.log(num);
+
+//splice method
+
+// const newarr =[34,45,5,4,3,6,75,7];
+// console.log(newarr);
+// const newdata =newarr.splice(2,3);
+// console.log(newdata)
+
+//reverse method
+
+// const newarr =[6,9,5,2,23,3,45];
+// console.log(newarr);
+// const newdata =newarr.reverse();
+// console.log(newdata);
+// console.log(newarr);
+
+//sort method
+const array =[1,23,4,3,54,6,56,5,86886];
+console.log(array);
+const newarr =array.sort();
+console.log(newarr);
