@@ -443,12 +443,53 @@
 // myFunc();
 
 //const in block scope
-function mydata(){
-    if(true){
-        const y =(7+7)*(2/3);
-        //console.log(y)
-    }
-    console.log(y)
-}
+// function mydata(){
+//     if(true){
+//         const y =(7+7)*(2/3);
+//         //console.log(y)
+//     }
+//     console.log(y)
+// }
 
-mydata();
+// mydata();
+
+
+//DOM manipulaions and its method
+// const ans =document.head;
+// console.log(ans)
+
+// const ans = document.body.lastElementChild;
+// console.log(ans)
+
+const result =document.getElementById("myIs");
+console.log(result);
+result.innerHTML ="<b>Rahul</b>";
+//result.innertext ="giri";
+const ans =document.getElementsByClassName("myyour");
+console.log(ans[0]);
+ans[0].innerHTML ="<b>Iron man 3</b>"
+
+const newdata = document.getElementsByTagName("span");
+console.log(newdata[0]);
+newdata[1].innerHTML ="<b>I am always happy</b>";
+
+const name1 =document.getElementsByName("email");
+console.log(name1[0])
+name1[0].style.width ="400px";
+
+const mybutton =document.getElementById("click");
+console.log(mybutton);
+mybutton.innerText="save";
+mybutton.style.background ="red";
+mybutton.style.cursor ="pointer";
+mybutton.style.color="blue";
+mybutton.style.padding="10px"
+mybutton.style.border ="none"
+
+function myfunc(){
+const create = document.createElement("h2");;
+create.innerHTML = "<b>its been a long day</b>";
+document.body.prepend(create);
+}
+//myfunc();
+mybutton.onclick =myfunc;
