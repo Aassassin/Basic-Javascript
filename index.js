@@ -461,35 +461,115 @@
 // const ans = document.body.lastElementChild;
 // console.log(ans)
 
-const result =document.getElementById("myIs");
-console.log(result);
-result.innerHTML ="<b>Rahul</b>";
-//result.innertext ="giri";
-const ans =document.getElementsByClassName("myyour");
-console.log(ans[0]);
-ans[0].innerHTML ="<b>Iron man 3</b>"
+//  const result =document.getElementById("myIs");
+//  console.log(result);
+//  result.innerHTML ="<b>Rahul</b>";
+// result.innertext ="giri";
+//  const ans =document.getElementsByClassName("myyour");
+//  console.log(ans[0]);
+//  ans[0].innerHTML ="<b>Iron man 3</b>"
 
-const newdata = document.getElementsByTagName("span");
-console.log(newdata[0]);
-newdata[1].innerHTML ="<b>I am always happy</b>";
+//  const newdata = document.getElementsByTagName("span");
+//  console.log(newdata[0]);
+//  newdata[1].innerHTML ="<b>I am always happy</b>";
 
-const name1 =document.getElementsByName("email");
-console.log(name1[0])
-name1[0].style.width ="400px";
+//  const name1 =document.getElementsByName("email");
+//  console.log(name1[0])
+//  name1[0].style.width ="400px";
 
-const mybutton =document.getElementById("click");
-console.log(mybutton);
-mybutton.innerText="save";
-mybutton.style.background ="red";
-mybutton.style.cursor ="pointer";
-mybutton.style.color="blue";
-mybutton.style.padding="10px"
-mybutton.style.border ="none"
+//   const mybutton =document.getElementById("click");
+//   console.log(mybutton);
+//  mybutton.innerText="save";
+//  mybutton.style.background ="red";
+//  mybutton.style.cursor ="pointer";
+//  mybutton.style.color="blue";
+//  mybutton.style.padding="10px";
+//  mybutton.style.border ="none";
 
-function myfunc(){
-const create = document.createElement("h2");;
-create.innerHTML = "<b>its been a long day</b>";
-document.body.prepend(create);
-}
-//myfunc();
-mybutton.onclick =myfunc;
+//   function myfunc(){
+//  const create = document.createElement("h2");;
+//   create.innerHTML = "<b>its been a long day</b>";
+//   document.body.prepend(create);
+// }
+// // // //myfunc();
+//   mybutton.onclick =myfunc;
+
+// const count =document.querySelector("#mycountry");
+// console.log(count);
+// count.innerHTML ="<b>Nepal has adapted non alliance foreign policy</b>";
+// count.style.background ="chocolate";
+
+// const myclear =document.querySelectorAll("button");
+// console.log(myclear);
+// //myclear[1].innerText="clear";
+// for(let i=0;i<myclear.length;i++){
+//     myclear[1].innerText="clear";
+// }
+// myclear[1].style.color="red";
+// //myclear[1].style.backgroundColor="chocolate";
+// myclear[1].style.cursor="pointer";
+// myclear[1].style.width="50px";
+
+
+// function Deletegar(){
+// const delete1 = document.querySelector("h2");
+// console.log(delete1);
+// delete1.remove();
+// }
+// mybutton.onclick =myfunc;
+// myclear[1].onclick =Deletegar;
+
+// const tiktok =document.querySelectorAll("span");
+// console.log(tiktok);
+// tiktok[0].innerHTML="<b>He should not die</b>";
+// tiktok[0].style.color="red";
+// tiktok[0].style.background="blue";
+
+
+//Advance array method
+
+//for each
+// if we use for each it cannot return array.It only iterete main array.
+let arr =[2,4,1,0,6,7,8];
+// const myresult =()=> {
+
+// }
+
+// const result = arr.forEach((value,index,array)=>{
+//   //console.log(index +"="+value);
+//   return(array[index]=value+2);
+// });
+// console.log(result)
+
+
+//Map
+//if we use map method it returns new array after iterate main array;
+// const mymap =arr.map((value,index,array)=>{
+// return array[index] =value +2;
+
+// });
+// console.log(mymap);
+
+//filter
+// const myfilter =arr.filter((value,index)=>{
+// //return value>2;
+// //return value %2===0;//for even number
+// return value % 2!==0; // for odd number
+// });
+// console.log(myfilter);
+
+//find method
+// const myfind=arr.find((value,index)=>{
+// return value >4;
+// });
+// console.log(myfind);
+
+//reduce method
+//accum => return single value output(sum,avg)
+const reduce =arr.reduce((accum,curvalue,index,array)=>{
+    console.log(accum,curvalue,index)
+//accum = accum+curvalue;
+//accum =(accum+curvalue)/2;
+    return accum;
+})
+console.log(reduce)
