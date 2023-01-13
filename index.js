@@ -530,7 +530,7 @@
 
 //for each
 // if we use for each it cannot return array.It only iterete main array.
-let arr =[2,4,1,0,6,7,8];
+//let arr =[2,4,1,0,6,7,8];
 // const myresult =()=> {
 
 // }
@@ -566,10 +566,64 @@ let arr =[2,4,1,0,6,7,8];
 
 //reduce method
 //accum => return single value output(sum,avg)
-const reduce =arr.reduce((accum,curvalue,index,array)=>{
-    console.log(accum,curvalue,index)
-//accum = accum+curvalue;
-//accum =(accum+curvalue)/2;
-    return accum;
+// const reduce =arr.reduce((accum,curvalue,index,array)=>{
+//     console.log(accum,curvalue,index)
+// //accum = accum+curvalue;
+// //accum =(accum+curvalue)/2;
+//     return accum;
+// })
+// console.log(reduce)
+
+
+//Event listener
+
+// const newclickbtn =document.getElementById("newclick");
+// newclickbtn.addEventListener("click",()=>{
+//     console.log("Clicked");
+// })
+
+//add event listener
+
+const newclick =document.getElementById("myclick");
+const newbox =document.getElementById("mybox");
+const newtag =document.getElementById("mytag");
+const myinput =document.querySelector("input");
+
+newclick.addEventListener("click",()=>{
+     newbox.classList.add("newCssDiv");
+    // newbox.style.background ="purple";
+    // newbox.style.color="red";
+    // newbox.style.margin ="20px"
+});
+newbox.addEventListener("mouseover",()=>{
+    newclick.style.transform ="scale(1.1)";
+    newtag.style.background ="chocolate";
+});
+
+newbox.addEventListener("mouseout",()=>{
+    newclick.style.transform ="";
+    newtag.style.background ="";
 })
-console.log(reduce)
+
+myinput.addEventListener("change",(e)=>{
+console.log(e);
+console.log(e.target.value)
+
+
+    //console.log("clicked");
+})
+
+newbox.addEventListener("dblclick",()=>{
+document.body.style.background ="black";
+});
+newbox.addEventListener("click",()=>{
+    document.body.style.background ="white";
+});
+newclick.addEventListener("contextmenu",(e)=>{
+    newclick.style.background ="purple";
+    //e.preventDefault();
+});
+
+addEventListener("contextmenu",(e)=>{
+    e.preventDefault();
+})

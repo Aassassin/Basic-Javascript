@@ -3,3 +3,11 @@
     background: green;
     text-align:center;
 }
+.newCssDiv{
+    padding:20px;
+    margin:20px;
+    background-color: aqua;
+    color:antiquewhite;
+    cursor:pointer;
+    width:15px;
+}
