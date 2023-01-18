@@ -584,46 +584,72 @@
 
 //add event listener
 
-const newclick =document.getElementById("myclick");
-const newbox =document.getElementById("mybox");
-const newtag =document.getElementById("mytag");
-const myinput =document.querySelector("input");
+// const newclick =document.getElementById("myclick");
+// const newbox =document.getElementById("mybox");
+// const newtag =document.getElementById("mytag");
+// const myinput =document.querySelector("input");
 
-newclick.addEventListener("click",()=>{
-     newbox.classList.add("newCssDiv");
-    // newbox.style.background ="purple";
-    // newbox.style.color="red";
-    // newbox.style.margin ="20px"
-});
-newbox.addEventListener("mouseover",()=>{
-    newclick.style.transform ="scale(1.1)";
-    newtag.style.background ="chocolate";
-});
+// newclick.addEventListener("click",()=>{
+//      newbox.classList.add("newCssDiv");
+//     // newbox.style.background ="purple";
+//     // newbox.style.color="red";
+//     // newbox.style.margin ="20px"
+// });
+// newbox.addEventListener("mouseover",()=>{
+//     newclick.style.transform ="scale(1.1)";
+//     newtag.style.background ="chocolate";
+// });
 
-newbox.addEventListener("mouseout",()=>{
-    newclick.style.transform ="";
-    newtag.style.background ="";
-})
+// newbox.addEventListener("mouseout",()=>{
+//     newclick.style.transform ="";
+//     newtag.style.background ="";
+// })
 
-myinput.addEventListener("change",(e)=>{
-console.log(e);
-console.log(e.target.value)
+// myinput.addEventListener("change",(e)=>{
+// console.log(e);
+// console.log(e.target.value)
 
 
-    //console.log("clicked");
-})
+//     //console.log("clicked");
+// })
 
-newbox.addEventListener("dblclick",()=>{
-document.body.style.background ="black";
-});
-newbox.addEventListener("click",()=>{
-    document.body.style.background ="white";
-});
-newclick.addEventListener("contextmenu",(e)=>{
-    newclick.style.background ="purple";
-    //e.preventDefault();
-});
+// newbox.addEventListener("dblclick",()=>{
+// document.body.style.background ="black";
+// });
+// newbox.addEventListener("click",()=>{
+//     document.body.style.background ="white";
+// });
+// newclick.addEventListener("contextmenu",(e)=>{
+//     newclick.style.background ="purple";
+//     //e.preventDefault();
+// });
 
-addEventListener("contextmenu",(e)=>{
-    e.preventDefault();
-})
+// addEventListener("contextmenu",(e)=>{
+//   /  e.preventDefault();
+//});
+
+
+//local storage and session storage
+
+const Myclickbtn =document.getElementById("myclick");
+const heyinput =document.getElementById("myinput");
+const Myclear =document.getElementById("myclear");
+
+const callmeback =()=>{
+    //alert(heyinput.value);
+    //sessionStorage.setItem("key",heyinput.value);
+localStorage.setItem("key",heyinput.value);
+}
+    Myclickbtn.addEventListener("click",callmeback)
+if(localStorage.getitem("key")){
+     alert(localStorage.getitem("key"));
+}
+
+Myclear.addEventListener("click",DeleteToken);
+
+const DeleteToken =()=>{
+    localStorage.clear();
+}
+if(localStorage.getitem("key")){
+    alert(localStorage.getitem("key"));
+}

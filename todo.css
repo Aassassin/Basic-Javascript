@@ -1,0 +1,62 @@
+* {
+    margin:0%;
+    padding:0%
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+background-color: white;
+margin:auto;
+padding:30px;
+width:70%;
+box-sizing: border-box;
+min-height: 100vh;
+}
+h1{
+    font:sans-serif;
+    text-align: center;
+    margin:10px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+
+}
+input,textarea,button{
+    padding: 10px;
+    margin:10px;
+    border: 1px solid chocolate;
+    font:100 1.1rem;
+    outline: none;
+}
+button{
+    background-color: steelblue;
+    color:white;
+    cursor: pointer;
+}
+button:hover{
+    background-color:blueviolet;
+
+}
+
+.task{
+    background-color: rgb(247,247,247);
+    display: flex;
+    align-items: center;
+    font:100 1.1rem sans-serif;
+    color:black;
+    margin:10px;
+}
+.task >div{
+    width:100%;
+}
+
+.deletebtn{
+    border-radius: 20%;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
