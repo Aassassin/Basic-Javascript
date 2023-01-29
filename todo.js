@@ -386,49 +386,165 @@
 
 //Static property and method
 
-class Calculator{
-    static add(a,b){
-        return a+b;
-    }
-    static sub(a,b){
-        return a-b
-    }
-    static mul(a,b){
-        return a*b;
-    }
-    static div(a,b){
-        return a/b;
-    }
-}
-let addition =Calculator.add(4,5);
-let subst =Calculator.sub(9,3);
-let multiply =Calculator.mul(9,3);
-let divide =Calculator.div(9,3);
-let ans = Math.random();
-console.log(ans)
-//console.log(addition,subst,multiply,divide)
+// class Calculator{
+//     static add(a,b){
+//         return a+b;
+//     }
+//     static sub(a,b){
+//         return a-b
+//     }
+//     static mul(a,b){
+//         return a*b;
+//     }
+//     static div(a,b){
+//         return a/b;
+//     }
+// }
+// let addition =Calculator.add(4,5);
+// let subst =Calculator.sub(9,3);
+// let multiply =Calculator.mul(9,3);
+// let divide =Calculator.div(9,3);
+// let ans = Math.random();
+// console.log(ans)
+// //console.log(addition,subst,multiply,divide)
 
-class User{
-    static id= 1;
-    constructor(name,age,income){
-        this.name=name;
-        this.age=age;
-        this.income=income;
-        this.id=User.id++;
-    }
-    static sortByAge(a,b){
-        return a.age-b.age;
-    }
-    static sortByIncome(a,b){
-        return a.income-b.income;
-    }
+// class User{
+//     static id= 1;
+//     constructor(name,age,income){
+//         this.name=name;
+//         this.age=age;
+//         this.income=income;
+//         this.id=User.id++;
+//     }
+//     static sortByAge(a,b){
+//         return a.age-b.age;
+//     }
+//     static sortByIncome(a,b){
+//         return a.income-b.income;
+//     }
 
+// }
+// const user1=new User("Assassin",22,10000);
+// const user2=new User("Rahul",21,122200);
+// const user3=new User("Kitkat",19,18009);
+// const users =[user1,user2,user3];
+// //console.log(user1,user2,user3);
+// //users.sort(User.sortByAge)
+// users.sort(User.sortByIncome)
+// console.log(users);
+
+
+// function hello(name="RAM"){
+//     setTimeout(()=>{
+//     for(let i=0;i<=10;i++){
+//          console.log(`${name} :${i}`);
+//     }
+// },4000);
+// }
+
+// function bye(){
+//     setTimeout(() => {
+//       alert("Hello world")  
+//     }, 5000);
+    
+//     console.log("bye")
+// }
+// hello();
+// bye();
+
+
+//hoisting
+// console.log(myfunc(4,3));
+// function myfunc(a,b){
+//   return a+b;
+// }
+
+// console.log(myfunc(3,2));
+// const myfunc =(a,b)=>{
+//   return a+b;
+// }
+
+
+//bom
+
+// console.log(location.protocol);
+// console.log(location.hostname);
+// console.log(location.port);
+// console.log(location.pathname);
+// console.log(location.href);
+
+// const myfunc =()=>location.assign("https://www.youtube.com");
+// console.log(history);
+// console.log(screen)
+
+//async and await in javascript(promise handling)
+// const h1 =document.querySelector("h1");
+// const url ="https://catfact.ninja/fact";
+
+// const fetchdata =async()=>{
+// try{
+  
+//   const res =await fetch(url);
+  
+// const data =await res.json();
+
+// h1.innerText =data.fact;
+
+// }catch(error){
+//   console.log(error.message);
+// }
+// }
+// fetchdata();
+
+
+//normal function
+
+// const obj ={
+//   name:"rahul",
+//   printName:function(){
+//     console.log(this.name);
+//   }
+// };
+// obj.printName();
+
+//Arrow function
+const obj1 ={
+  name:"Assassin",
+  printName:()=>{
+    console.log(this.name);
+  }
 }
-const user1=new User("Assassin",22,10000);
-const user2=new User("Rahul",21,122200);
-const user3=new User("Kitkat",19,18009);
-const users =[user1,user2,user3];
-//console.log(user1,user2,user3);
-//users.sort(User.sortByAge)
-users.sort(User.sortByIncome)
-console.log(users);
+obj1.printName();
+
+//here, in normal function 'this' refers to the object and it will print "rahul"
+// but in arrow functio 'this' keyword refers to the global object and it will print
+// 'undefined'
+
+//normal function
+// function printArgument(){
+//   console.log(arguments);
+// }
+// printArgument(1,2,3)
+
+
+//arrow function
+// const printArgument =()=>{
+//   console.log(arguments);
+// }
+// printArgument(1,2,3);
+
+//here in normal function you can access the argument object but in arroe function you cannot
+//acccess the arguemnt object
+
+
+// function person(name){
+//   this.name= name;
+// }
+// const john =new person("john");
+// console.log(john.name);
+
+const person =(name)=>{
+  this.name =name;
+}
+const ram =new person("ram");
+console.log(ram.name);
